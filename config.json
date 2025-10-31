@@ -1,0 +1,41 @@
+{
+  "system": {
+    "name": "Regional Ticket Processing System",
+    "version": "1.0.0",
+    "base_path": "C:\\Users\\Sebas\\OneDrive\\Desktop\\Proyecto Reconciliation\\Pipeline\\contuinity_refactor\\contuinity",
+    "regions": [
+      "LMR",
+      "MAM",
+      "MAR",
+      "WCR",
+      "NER",
+      "GLR",
+      "SWR",
+      "NCR"
+    ]
+  },
+  "processing": {
+    "default_tolerance": 100,
+    "default_huge_jump_threshold": 101,
+    "intra_missing_tolerance": 0,
+    "default_engine": "pandas",
+    "max_chunk_size": 10000
+  },
+  "monitoring": {
+    "max_age_hours": 24,
+    "backup_retention_days": 7,
+    "health_check_interval": "daily"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "production_pipeline.log",
+    "max_file_size": "10MB",
+    "backup_count": 5
+  },
+  "notifications": {
+    "email_enabled": false,
+    "email_recipients": [],
+    "alert_on_failure": true,
+    "alert_on_stale_data": true
+  }
+}
