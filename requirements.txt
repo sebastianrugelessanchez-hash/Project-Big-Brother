@@ -1,0 +1,13 @@
+# Core data stack
+pandas>=2.0
+numpy>=1.23
+
+# Excel read/write engines
+openpyxl>=3.1      # xlsx/xlsm reader-writer for pandas
+xlrd>=2.0          # legacy .xls reader support
+
+# Parquet engine (pandas.read_parquet)
+pyarrow>=12.0
+
+# Optional: distributed / out-of-core processing
+dask[complete]>=2024.1.0
